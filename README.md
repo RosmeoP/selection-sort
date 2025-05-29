@@ -1,26 +1,29 @@
 Selection Sort
-This repository contains an implementation of the Selection Sort algorithm in Python.
+A minimal Python implementation of the selection sort algorithm.
 
 About Selection Sort
-Selection Sort is a simple comparison-based sorting algorithm. It works by repeatedly finding the minimum element from the unsorted portion of the list and moving it to the beginning.
+Selection sort is a simple sorting algorithm that repeatedly selects the smallest (or largest) element from the unsorted portion and moves it to the sorted portion of the list. It’s useful for understanding basic sorting concepts and is easy to implement, though not efficient for large datasets.
 
-Algorithm Complexity:
-
-Time Complexity: O(n²)
-Space Complexity: O(1)
+Time Complexity:
+Best: O(n²)
+Average: O(n²)
+Worst: O(n²)
+Space Complexity: O(1) (in-place)
+Stable: No (unless specifically implemented to be stable)
 Usage
-To use the selection sort implementation, clone this repository and run the Python script provided.
+Python
+from selection_sort import selection_sort
+
+arr = [64, 25, 12, 22, 11]
+print("Sorted array:", selection_sort(arr))
+Features
+Simple and easy to understand
+Pure Python, no dependencies
+Getting Started
+Clone the repo:
 
 bash
 git clone https://github.com/RosmeoP/selection-sort.git
 cd selection-sort
-python selection_sort.py
-Example
-Suppose you have an array:
-
-Python
-arr = [64, 25, 12, 22, 11]
-selection_sort(arr)
-print(arr)  # Output: [11, 12, 22, 25, 64]
 License
-This project is licensed under the MIT License.
+MIT
